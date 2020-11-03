@@ -42,6 +42,7 @@ def raster_extent(data, pathout):
     _ring.AddPoint(_lon_1, _lat_1)
     _ring.AddPoint(_lon_3, _lat_3)
     _ring.AddPoint(_lon_2, _lat_2)
+    _ring.AddPoint(_lon_0, _lat_0)
     _yard = ogr.Geometry(ogr.wkbPolygon)
     _yard.AddGeometry(_ring)
     _feat.SetGeometry(_yard)#写入几何
